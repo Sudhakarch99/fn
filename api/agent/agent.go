@@ -1215,7 +1215,7 @@ func newHotContainer(ctx context.Context, evictor Evictor, call *call, cfg *Conf
 		memory:     call.Memory,
 		cpus:       uint64(call.CPUs),
 		fsSize:     cfg.MaxFsSize,
-		pids:       uint64(cfg.MaxPIDs),
+		pids:       uint64(call.PIDs),
 		tmpFsSize:  uint64(call.TmpFsSize),
 		disableNet: call.disableNet,
 		iofs:       iofs,

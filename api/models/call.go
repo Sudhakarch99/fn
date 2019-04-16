@@ -90,6 +90,9 @@ type Call struct {
 	// Tmpfs size in megabytes.
 	TmpFsSize uint32 `json:"tmpfs_size,omitempty" db:"-"`
 
+	// PIDs is the maximum amount of PIDs that are allowed.
+	PIDs uint64 `json:"pids,omitempty" db:"-"`
+
 	// Memory is the amount of RAM this call is allocated.
 	Memory uint64 `json:"memory,omitempty" db:"-"`
 
